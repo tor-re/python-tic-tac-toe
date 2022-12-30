@@ -80,6 +80,22 @@ while gameRunning:
         printRow(cen)
         printRow(bot)
         print("‾‾‾‾‾‾‾‾‾‾‾‾‾")
+     if top[0] == cen[1] == bot[2] == turn:
+        gameRunning = False
+        print("win " + turn)
+        print("_____________")
+        printRow(top)
+        printRow(cen)
+        printRow(bot)
+        print("‾‾‾‾‾‾‾‾‾‾‾‾‾")
+     if bot[0] == cen[1] == top[2] == turn:
+        gameRunning = False
+        print("win " + turn)
+        print("_____________")
+        printRow(top)
+        printRow(cen)
+        printRow(bot)
+        print("‾‾‾‾‾‾‾‾‾‾‾‾‾")
     if turn == "x":
         turn = "o"
     elif turn == "o":
