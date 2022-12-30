@@ -58,7 +58,6 @@ while gameRunning:
         gameRunning = False
         print("win " + turn)
         print("_____________")
-        #top boarder
         printRow(top)
         printRow(cen)
         printRow(bot)
@@ -70,7 +69,6 @@ while gameRunning:
         printRow(top)
         printRow(cen)
         printRow(bot)
-        #all rows
         print("‾‾‾‾‾‾‾‾‾‾‾‾‾")
     if bot[0] == bot[1] == bot[2] == turn:
         gameRunning = False
@@ -80,7 +78,7 @@ while gameRunning:
         printRow(cen)
         printRow(bot)
         print("‾‾‾‾‾‾‾‾‾‾‾‾‾")
-     if top[0] == cen[1] == bot[2] == turn:
+    if top[0] == cen[1] == bot[2] == turn:
         gameRunning = False
         print("win " + turn)
         print("_____________")
@@ -88,7 +86,7 @@ while gameRunning:
         printRow(cen)
         printRow(bot)
         print("‾‾‾‾‾‾‾‾‾‾‾‾‾")
-     if bot[0] == cen[1] == top[2] == turn:
+    if bot[0] == cen[1] == top[2] == turn:
         gameRunning = False
         print("win " + turn)
         print("_____________")
