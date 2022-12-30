@@ -63,7 +63,7 @@ while gameRunning:
         printRow(cen)
         printRow(bot)
         print("‾‾‾‾‾‾‾‾‾‾‾‾‾")
-    if top[0] == cen[1] == bot[2] == turn:
+    if cen[0] == cen[1] == cen[2] == turn:
         gameRunning = False
         print("win " + turn)
         print("_____________")
@@ -72,7 +72,7 @@ while gameRunning:
         printRow(bot)
         #all rows
         print("‾‾‾‾‾‾‾‾‾‾‾‾‾")
-    if bot[0] == cen[1] == top[2] == turn:
+    if bot[0] == bot[1] == bot[2] == turn:
         gameRunning = False
         print("win " + turn)
         print("_____________")
