@@ -1,6 +1,6 @@
 import sys, time 
 asciiArt = ['  _______ _____ _____   _______       _____   _______ ____  ______ \n',' |__   __|_   _/ ____| |__   __|/\   / ____| |__   __/ __ \|  ____|\n','    | |    | || |         | |  /  \ | |         | | | |  | | |__   \n','    | |    | || |         | | / /\ \| |         | | | |  | |  __|  \n','    | |   _| || |____     | |/ ____ \ |____     | | | |__| | |____ \n','    |_|  |_____\_____|    |_/_/    \_\_____|    |_|  \____/|______|\n']
-c = input("wanna play [y/n]")
+c = input("wanna play [y/n] \n")
 if c == "y":
     turn = "x"
     gameRunning = True
@@ -34,7 +34,7 @@ while gameRunning:
     printRow(cen)
     printRow(bot)
     print("‾‾‾‾‾‾‾‾‾‾‾‾‾")
-    spot = int(input("pick a spot 1 being top left 9 being bottom right"))
+    spot = int(input("pick a spot 1 being top left 9 being bottom right: "))
     if spot - 1 <= 2 and top[spot - 1] == " ":
         top[spot - 1] = turn
         change = True
