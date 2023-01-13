@@ -37,7 +37,8 @@ while gameRunning:
     printRow(cen)
     printRow(bot)
     print("‾‾‾‾‾‾‾‾‾‾‾‾‾")
-    spot = int(input("pick a spot 1 being top left 9 being bottom right", turn, ": "))
+    print("turn:", turn)
+    spot = int(input("pick a spot 1 being top left 9 being bottom right"))
     loadnext()
     if spot - 1 <= 2 and top[spot - 1] == " ":
         top[spot - 1] = turn
