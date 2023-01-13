@@ -4,7 +4,7 @@ if [ ! -x tictactoe.py ]
 then 
   chmod +x setupttt.sh 
   echo "uh oh... lets setup"
-  ./settup.sh
+  ./setupttt.sh
   sleep 1 
   echo "all good"
 fi
