@@ -1,5 +1,4 @@
 #!
-cd ./python-tic-tac-toe
 if [ ! -x tictactoe.py ] 
 then 
   chmod +x setupttt.sh 
