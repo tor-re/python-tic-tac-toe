@@ -41,7 +41,7 @@ while gameRunning:
     try:
         spot = int(input("pick a spot 1 being top left 9 being bottom right: "))
     except:
-        print("error invalad input mate ya lose your turn)
+        print("error invalad input mate ya lose your turn")
     loadnext()
     if spot - 1 <= 2 and top[spot - 1] == " ":
         top[spot - 1] = turn
