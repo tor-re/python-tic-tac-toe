@@ -1,4 +1,9 @@
 import sys, time 
+def loadnext(){
+    for _ in range(15){
+        print("\n")
+    }
+}
 asciiArt = ['  _______ _____ _____   _______       _____   _______ ____  ______ \n',' |__   __|_   _/ ____| |__   __|/\   / ____| |__   __/ __ \|  ____|\n','    | |    | || |         | |  /  \ | |         | | | |  | | |__   \n','    | |    | || |         | | / /\ \| |         | | | |  | |  __|  \n','    | |   _| || |____     | |/ ____ \ |____     | | | |__| | |____ \n','    |_|  |_____\_____|    |_/_/    \_\_____|    |_|  \____/|______|\n']
 c = input("wanna play [y/n] \n")
 if c == "y":
@@ -34,7 +39,8 @@ while gameRunning:
     printRow(cen)
     printRow(bot)
     print("‾‾‾‾‾‾‾‾‾‾‾‾‾")
-    spot = int(input("pick a spot 1 being top left 9 being bottom right: "))
+    spot = int(input("pick a spot 1 being top left 9 being bottom right", turn, ": "))
+    loadnext()
     if spot - 1 <= 2 and top[spot - 1] == " ":
         top[spot - 1] = turn
         change = True
@@ -48,7 +54,8 @@ while gameRunning:
     for _ in range(len(top)):
         if top[_] == cen[_] == bot[_] == turn:
             gameRunning = False
-            print("win " + turn)
+            loadnext()
+            print("win", turn)
             print("_____________")
             printRow(top)
             printRow(cen)
@@ -56,7 +63,8 @@ while gameRunning:
             print("‾‾‾‾‾‾‾‾‾‾‾‾‾")
     if top[0] == top[1] == top[2] == turn:
         gameRunning = False
-        print("win " + turn)
+        loadnext()
+        print("win", turn)
         print("_____________")
         printRow(top)
         printRow(cen)
@@ -64,7 +72,8 @@ while gameRunning:
         print("‾‾‾‾‾‾‾‾‾‾‾‾‾")
     if cen[0] == cen[1] == cen[2] == turn:
         gameRunning = False
-        print("win " + turn)
+        loadnext()
+        print("win", turn)
         print("_____________")
         printRow(top)
         printRow(cen)
@@ -72,7 +81,8 @@ while gameRunning:
         print("‾‾‾‾‾‾‾‾‾‾‾‾‾")
     if bot[0] == bot[1] == bot[2] == turn:
         gameRunning = False
-        print("win " + turn)
+        loadnext()
+        print("win", turn)
         print("_____________")
         printRow(top)
         printRow(cen)
@@ -80,7 +90,8 @@ while gameRunning:
         print("‾‾‾‾‾‾‾‾‾‾‾‾‾")
     if top[0] == cen[1] == bot[2] == turn:
         gameRunning = False
-        print("win " + turn)
+        loadnext()
+        print("win", turn)
         print("_____________")
         printRow(top)
         printRow(cen)
@@ -88,7 +99,8 @@ while gameRunning:
         print("‾‾‾‾‾‾‾‾‾‾‾‾‾")
     if bot[0] == cen[1] == top[2] == turn:
         gameRunning = False
-        print("win " + turn)
+        loadnext()
+        print("win", turn)
         print("_____________")
         printRow(top)
         printRow(cen)
